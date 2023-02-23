@@ -13,21 +13,32 @@
 weather = "sunny"
 
 if weather == "sunny"
-  p "sunscreen"
+  p "sunglasses"
 elsif weather == "rainy"
-  p "umbrella"
+  p "poncho"
 elsif weather == "snowy"
-  p "coat"
+  p "gloves"
 elsif weather == "icy"
-  p "yak traks"
+  p "boots"
 else
   p "good to go!"
 end
 
 # Experiment with manipulating the value held in variable 'weather'
 # to print something other than 'sunscreen'
+weather = "snowy"
 
-
+if weather == "sunny"
+  p "sunglasses"
+elsif weather == "rainy"
+  p "poncho"
+elsif weather == "snowy"
+  p "gloves"
+elsif weather == "icy"
+  p "boots"
+else
+  p "good to go!"
+end
 ##################
 # Using the num_quarters variable defined below, determine
 # if you have enough money to buy a gumball. A gumball costs
@@ -42,10 +53,12 @@ end
 # to make sure both conditions can be achieved.
 
 num_quarters = 0
-
+if
+  num_quarters >= 2  
 puts "I have enough money for a gumball"
+else
 puts "I don't have enough money for a gumball"
-
+end
 
 #####################
 # Using the variables defined below, write code that will tell you
@@ -63,3 +76,10 @@ puts "I don't have enough money for a gumball"
 
 cups_of_flour = 1
 has_sauce = true
+if
+cups_of_flour >= 2 && has_sauce == true
+puts "I can make pizza"
+else
+ puts "I cannot make pizza"
+end
+
